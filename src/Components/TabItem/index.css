@@ -1,0 +1,38 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+  margin-left: 13px;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-button {
+    font-size: 24px;
+  }
+}
+
+.is-active-style {
+  border-bottom: 3px solid #fec653;
+  color: #fec653;
+}
