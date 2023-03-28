@@ -270,6 +270,10 @@ class MatchGameFAP extends Component {
     }, 1000)
   }
 
+  componentWillUnmount() {
+    clearInterval(this.intervalId)
+  }
+
   decrementTimer = () => {
     this.setState(prevState => ({timer: prevState.timer - 1}))
   }
