@@ -10,19 +10,21 @@ const NavBar = props => {
         alt="website logo"
         className="website-logo"
       />
-      <div className="score-time-container">
-        <p className="score">
-          Score:<span className="score-num">{score}</span>
-        </p>
-        <div className="timer-container">
+      <ul className="score-time-container">
+        <li className="score">
+          <p>
+            Score:<span className="score-num">{score}</span>
+          </p>
+        </li>
+        <li className="timer-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
             alt="timer"
             className="timer-image"
           />
           <p className="timer">{timerCount} sec</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   )
 }

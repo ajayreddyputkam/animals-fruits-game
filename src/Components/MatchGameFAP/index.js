@@ -298,6 +298,7 @@ class MatchGameFAP extends Component {
   }
 
   playAgainGame = () => {
+    this.componentDidMount()
     this.setState({
       timer: 60,
       activeTabId: tabsList[0].tabId,
